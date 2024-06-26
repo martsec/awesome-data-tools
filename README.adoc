@@ -1,0 +1,72 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+= Awesome Data Tools
+:toc:
+
+A curated list of useful data-related tools to keep an eye on. 
+
+
+[NOTE]
+.My take after several years of working in big data
+====
+Computers are faster everyday. 
+So for your simplicity's sake try to develop single-box applications
+that can serve multiple users. 
+Avoid distributed apps unless really needed.
+====
+
+## Databases
+
+* sqlLite: SQL database without hassle. No need for external service since you are just using a library and a file. Good for enough of your needs unless you scale beyond multiple machines. https://highperformancesqlite.com/interviews/dhh[See DHH's take] 
+* https://github.com/cockroachdb/cockroach[CockroachDB] distributed and resilient
+
+### Queues (streaming)
+
+* Redpanda: kafka alternative
+
+### Key Value
+
+* ScillaDB: cassandra alternative
+
+### Search
+
+* https://www.meilisearch.com/[Meilisearch]
+* https://manticoresearch.com/[ManticoreSearch]: Elasticsearch alternative
+
+## Processing
+
+* Ibis: Run to multiple data processing backends using the same API
+
+### Single node engines
+
+* DuckDB: query TBs of data with its bigger-than-memory capabilities (tewaking might be needed)
+
+
+### Distributed engines
+
+* Apache Spark: trusted old software. Though you need a place to run it.
+* https://github.com/TimelyDataflow/differential-dataflow[Differential dataflow]: a different computation paradigm for real-time updates on data
+* https://datafusion.apache.org/[DataFusion]
+* Trino: distributed sql engine. Though maintaining its clusters can be challenging
+
+
+## AI 
+
+* https://python.langchain.com/v0.2/docs/introduction/[LangChain] Develop apps that use LLMs
+* https://www.langflow.org/[LangFlow] build agents and RAG applications in a visual way
+* https://www.gumloop.com/pipeline?workbook_id=dDVh3HV1cDJaUk57ViT7Zr[Gumloop] Automate your tasks with LLMs with lots of connectors (gmail, google calendar, drive...)
+
+## Tools 
+
+* poetry: for dependency management
+* ruff: fast linting and code styler
+* Pydantic: better dataclasses with schema validation
+* FastAPI: Best api library on python. With automated docs and schema validation
+* Typer: for cli applications 
+* open-telemetry: standard observability library
+* logfire: observability platform built by the pydantic team
