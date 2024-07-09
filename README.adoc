@@ -38,6 +38,15 @@ Avoid distributed apps unless really needed.
 * https://www.meilisearch.com/[Meilisearch]
 * https://manticoresearch.com/[ManticoreSearch]: Elasticsearch alternative
 
+### Object Store
+
+* https://github.com/seaweedfs/seaweedfs[SeaweedFS] Open source distributed object storage with O(1) file access, tiered storage and S3 API. 
+
+### Time Series
+
+* https://github.com/influxdata/influxdb[influxdb] Open source time series DB for metrics, events and real-time analytics.
+* https://clickhouse.com/clickhouse[clickhouse] Column-oriented db for metrics, events and real-time analytics. With SQL
+
 ## Processing
 
 * Ibis: Run to multiple data processing backends using the same API
@@ -54,9 +63,17 @@ Avoid distributed apps unless really needed.
 * https://datafusion.apache.org/[DataFusion]
 * Trino: distributed sql engine. Though maintaining its clusters can be challenging
 
+## Graphical User Interfaces (Dashboards, BI...)
+
+* https://evidence.dev/[evidence] Open-source markdown-to-dashboard library 
+* https://github.com/Avaiga/taipy[taipy] Open-source python data pipeline to web app framework
+* https://www.gradio.app/[gradio] Open-source python web app for ML and AI. Used by multiple companies: if you've tested a model in hugginface, you've used gradio.
+* https://streamlit.io/[Streamlit] python web app builder. You can deploy apps on their cloud for free.
+
 
 ## AI 
 
+* https://huggingface.co/[Hugging Face] AI everything opensource: community, model repository, libraries, free GPUs....
 * https://python.langchain.com/v0.2/docs/introduction/[LangChain] Develop apps that use LLMs
 * https://www.langflow.org/[LangFlow] build agents and RAG applications in a visual way
 * https://www.gumloop.com/pipeline?workbook_id=dDVh3HV1cDJaUk57ViT7Zr[Gumloop] Automate your tasks with LLMs with lots of connectors (gmail, google calendar, drive...)
