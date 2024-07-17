@@ -61,7 +61,15 @@ Avoid distributed apps unless really needed.
 * Apache Spark: trusted old software. Though you need a place to run it.
 * https://github.com/TimelyDataflow/differential-dataflow[Differential dataflow]: a different computation paradigm for real-time updates on data
 * https://datafusion.apache.org/[DataFusion]
-* Trino: distributed sql engine. Though maintaining its clusters can be challenging
+* Trino: distributed sql engine. Though maintaining its clusters can be challenging (What AWS Athena is based on)
+
+
+## Orchestration
+
+* Apache Airflow: The good old cron with vitamins that just works
+  * https://github.com/astronomer/astro-cli[Astro CLI] easy airflow dev environment in your local machine using docker
+  * Challenges: bit on the deployment side. Can't deploy multiple code branches in the same instance like others allow you to
+* Mage: new contender
 
 ## Graphical User Interfaces (Dashboards, BI...)
 
