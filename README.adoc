@@ -25,6 +25,8 @@ Avoid distributed apps unless really needed.
 * sqlLite: SQL database without hassle. No need for external service since you are just using a library and a file. Good for enough of your needs unless you scale beyond multiple machines. https://highperformancesqlite.com/interviews/dhh[See DHH's take] 
 * https://github.com/cockroachdb/cockroach[CockroachDB] distributed and resilient
 
+* https://materialize.com/[Materialize] fast analytics on constantly changing data. Built on top of differential dataflow
+
 ### Queues (streaming)
 
 * Redpanda: kafka alternative
@@ -47,6 +49,11 @@ Avoid distributed apps unless really needed.
 * https://github.com/influxdata/influxdb[influxdb] Open source time series DB for metrics, events and real-time analytics.
 * https://clickhouse.com/clickhouse[clickhouse] Column-oriented db for metrics, events and real-time analytics. With SQL
 
+### Graph 
+
+* classic neo4j
+* https://memgraph.com/[Memgraph] fast graph db? 
+
 ## Processing
 
 * Ibis: Run to multiple data processing backends using the same API
@@ -62,6 +69,12 @@ Avoid distributed apps unless really needed.
 * https://github.com/TimelyDataflow/differential-dataflow[Differential dataflow]: a different computation paradigm for real-time updates on data
 * https://datafusion.apache.org/[DataFusion]
 * Trino: distributed sql engine. Though maintaining its clusters can be challenging (What AWS Athena is based on)
+
+### Graph engines
+
+* networkX
+* https://github.com/dsg-uwaterloo/graphsurge[Experimental - GraphSurge] Built on top of differential dataflow
+
 
 
 ## Orchestration
@@ -95,3 +108,11 @@ Avoid distributed apps unless really needed.
 * Typer: for cli applications 
 * open-telemetry: standard observability library
 * logfire: observability platform built by the pydantic team
+
+### Python test setup
+
+* pytest
+* pytest-cov setting the lower limit at 80%
+* hypothesis for property based testing (generates test data) + hypothesis-auto
+* pytest-watch to continuously run tests in the backend
+* Memray (memory profiler) + pytest-memray to set limits on memory consumed in individual tests
