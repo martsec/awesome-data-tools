@@ -109,6 +109,10 @@ Avoid distributed apps unless really needed.
 * open-telemetry: standard observability library
 * logfire: observability platform built by the pydantic team
 
+### Local data inspection
+
+* https://github.com/NeoPanic/Glim[Glim]: macOS file viewer for inspecting CSV tables, JSON trees and read-only SQLite snapshots.
+
 ### Python test setup
 
 * pytest
